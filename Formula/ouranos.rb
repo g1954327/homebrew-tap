@@ -11,7 +11,7 @@ option "without-completions", "Disable bash completions"
 depends_on "bash-completion@2" => :optional
 def install
     bin.install "ouranos"
-bash_completion.install "completions/bash/ouranos" if build.with? "completions" end
+bash_completion.install "cmd/completions/bash/ouranos" if build.with? "completions" end
   test do
     system bin/"ouranos", "--version"
 end end
