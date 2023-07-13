@@ -11,6 +11,8 @@ option "without-completions", "Disable bash completions"
 depends_on "bash-completion@2" => :optional
 def install
     bin.install "ouranos"
+path_getwd = Dir.getwd
+puts "getwdメソッド：#{path_getwd}"
 bash_completion.install "https://github.com/g1954327/ouranos/blob/v0.1.16/cmd/ouranos/completions/bash/ouranos" if build.with? "completions" end
   test do
     system bin/"ouranos", "--version"
