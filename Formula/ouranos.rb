@@ -5,7 +5,7 @@ class Ouranos < Formula
   homepage "https://github.com/g1954327/ouranos"
   url "https://github.com/g1954327/ouranos/releases/download/v#{VERSION}/ouranos-#{VERSION}_darwin_amd64.tar.gz" 
   version VERSION
-  sha256 "392dd0ec2360706e486f84d8fbe34096fc1b15b2a95d2503473d5fdce6640de1"
+  sha256 "0cf5c970b446600a3448cd0128c5c1aa10360eb9dab458905bc3a9816919e88d"
   license "MIT"
   option "without-completions", "Disable bash completions"
   depends_on "bash-completion@2" => :optional
