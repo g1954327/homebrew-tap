@@ -1,5 +1,5 @@
-VERSION="1.0.0"
-class ouranos < Formula
+VERSION="0.1.16"
+class Ouranos < Formula
 desc "URL shortener via bit.ly, etc."
 homepage "https://github.com/g1954327/ouranos"
 url "https://github.com/g1954327/ouranos/releases/download/v#{VERSION}/ouranos-#{VERSION}_darwin_amd64.tar.gz" version VERSION
