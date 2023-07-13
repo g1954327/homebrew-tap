@@ -12,7 +12,7 @@ class Ouranos < Formula
 
   def install
     bin.install "ouranos"
-    bash_completion.install "completions/bash/ouranos" if build.with? "completions" 
+    zsh_completion.install "completions/zsh/ouranos" if build.with? "completions" 
   end
   test do
     system bin/"ouranos", "--version"
